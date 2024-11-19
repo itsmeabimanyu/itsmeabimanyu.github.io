@@ -1,39 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple HTML Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+  <title>devfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.bundle.css">
+  <!-- <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <div class="container">
-        <h1>Welcome to My Simple HTML Page</h1>
-        <p>This is a basic HTML page example created for demonstration purposes.</p>
-        <p>You can customize it further by adding more HTML elements and CSS styles.</p>
-        <p>Feel free to explore and experiment!</p>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="navbar-item is-hidden-desktop">
+        <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+          <i class="fab fa-2x fa-github"></i>
+        </a>
+      </div>
+      <div class="navbar-item is-hidden-desktop">
+        <a href="https://fullstackmark.com" class="icon is-large has-text-light">
+          <i class="fas fa-2x fa-globe"></i>
+        </a>
+      </div>
     </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+            <i class="fab fa-2x fa-github"></i>
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="https://fullstackmark.com" class="icon is-large has-text-light">
+            <i class="fas fa-2x fa-globe"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <div class="level">
+          <div class="level-item has-text-centered">
+            <figure class="image is-128x128">
+              <img class="is-rounded" src="img/me-big.jpg">
+            </figure>
+          </div>
+        </div>
+        <div class="columns has-text-centered">
+          <div class="column">
+            <h1 class="title is-1">
+              Abimanyu
+            </h1>
+            <h2 class="subtitle">
+              FullStack .NET Dev, Halifax, NS
+            </h2>
+            <p>
+              <a href="docs/resume.txt" class="icon has-text-light">
+                <i class="fas fa-file-word"></i> <strong>Resume</strong>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">About Me</h1>
+      <hr />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+    </div>
+  </section>
+
+  <div class="row">
+    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+      <section class="section">
+        <div class="container">
+          <h1 class="title">Pengalaman Kerja</h1>
+          <hr />
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://media.licdn.com/dms/image/C560BAQEt4bycByN9fA/company-logo_200_200/0/1519868172283?e=2147483647&v=beta&t=CIodWJH9QSbp5Ks4n9oem53KW2HD2akuW87Yjp3USfE" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">IT Staff - Development & Automation</p>
+                  <p class="subtitle is-6"><b>PT. Frina Lestari Nusantara</b><br><time datetime="2023-5">Mei 2023</time> - <time
+                      datetime="2019-9">Sekarang</time>&nbsp(1 Tahun, 6 Bulan)</p>
+                </div>
+              </div>
+              <div class="content">
+                <p><b>Job desk:</b></p>
+                <ul>
+                  <li>Noteworthy achievment here.</li>
+                  <li>Noteworthy achievment here.</li>
+                  <li>Noteworthy achievment here.</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">c#</span>
+                  <span class="tag">xamarin</span>
+                  <span class="tag">asp.net core</span>
+                  <span class="tag">.net core</span>
+                  <span class="tag">azure</span>
+                  <span class="tag">devops</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-gap">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://media.licdn.com/dms/image/C560BAQEB0_yJj0xebQ/company-logo_200_200/0/1630663326380/pt_mekar_armada_jaya_logo?e=2147483647&v=beta&t=IhINniXg79_4zHEK-PQb-UrjIqj4J1vjAyMCmSS6IfA" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">IT Staff - Software Development</p>
+                  <p class="subtitle is-6"><b>PT. Mekar Armada Jaya (New Armada)</b><br><time datetime="2021-12">Desember 2021</time> - <time
+                      datetime="2022-12">Desember 2022</time>&nbsp(1 Tahun, 0 Bulan)</p>
+                </div>
+              </div>
+              <div class="content">
+                <p><b>Job desk:</b></p>
+                <ul>
+                  <li>Noteworthy achievment here.</li>
+                  <li>Noteworthy achievment here.</li>
+                  <li>Noteworthy achievment here.</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">c#</span>
+                  <span class="tag">xamarin</span>
+                  <span class="tag">asp.net core</span>
+                  <span class="tag">.net core</span>
+                  <span class="tag">azure</span>
+                  <span class="tag">devops</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-gap">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFhlX1f-5tqjg/company-logo_200_200/0?e=2159024400&v=beta&t=TfogWkrg97m9CocKerd8OxivAtBeISVpFny9Zclz2sk" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Admin Assistant - Warehouse Inventory Control Staff</p>
+                  <p class="subtitle is-6"><b>PT. Hero Supermarket Tbk.</b><br><time datetime="2015-03">Maret 2015</time> - <time
+                      datetime="2021-09">September 2021</time>&nbsp(6 Tahun, 6 Bulan)</p>
+                </div>
+              </div>
+              <div class="content">
+                <p><b>Job desk:</b></p>
+                <ul>
+                  <li>Noteworthy achievment here.</li>
+                  <li>Noteworthy achievment here.</li>
+                  <li>Noteworthy achievment here.</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">c#</span>
+                  <span class="tag">xamarin</span>
+                  <span class="tag">asp.net core</span>
+                  <span class="tag">.net core</span>
+                  <span class="tag">azure</span>
+                  <span class="tag">devops</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-gap">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://media.licdn.com/dms/image/C560BAQHL6cLwuMXR-w/company-logo_200_200/0/1630636955788?e=2147483647&v=beta&t=Gqc9PBkc2GvN_Izy8fd8kMykMjWPOz_Qa8IVQ-h7yNQ" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Operator - Key Set Assembly & QA Checker</p>
+                  <p class="subtitle is-6"><b>PT. Honda Lock Indonesia</b><br><time datetime="2012-03">Maret 2012</time> - <time
+                      datetime="2014-01">Januari 2014</time>&nbsp(1 Tahun, 10 Bulan)</p>
+                </div>
+              </div>
+              <div class="content">
+                <p><b>Job desk:</b></p>
+                <ul>
+                  <li>Noteworthy achievment here.</li>
+                  <li>Noteworthy achievment here.</li>
+                  <li>Noteworthy achievment here.</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">c#</span>
+                  <span class="tag">xamarin</span>
+                  <span class="tag">asp.net core</span>
+                  <span class="tag">.net core</span>
+                  <span class="tag">azure</span>
+                  <span class="tag">devops</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-gap">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFrOrenh8oApw/company-logo_200_200/0/1590564166935?e=2159024400&v=beta&t=TjjgOFxf3I0DQ5hhRO3ZpBa4dr5VjJJiH7WVmUwtLJw" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Operator - Press Sprocket</p>
+                  <p class="subtitle is-6"><b>PT. Sunstar Engineering Indonesia</b><br><time datetime="2009-06">Juni 2009</time> - <time
+                      datetime="2011-12">Desember 2011</time>&nbsp(2 Tahun, 6 Bulan)</p>
+                </div>
+              </div>
+              <div class="content">
+                <p><b>Job desk:</b></p>
+                <ul>
+                  <li>Noteworthy achievment here.</li>
+                  <li>Noteworthy achievment here.</li>
+                  <li>Noteworthy achievment here.</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">c#</span>
+                  <span class="tag">xamarin</span>
+                  <span class="tag">asp.net core</span>
+                  <span class="tag">.net core</span>
+                  <span class="tag">azure</span>
+                  <span class="tag">devops</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    </div>
+    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+      <section class="section">
+        <div class="container">
+          <h1 class="title">Projects</h1>
+          <hr />
+          <div class="row">
+            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="Screenshot of web app" src="img/DTLOG_Dashboard.png" style="height: 100%; width: 100%" data-bs-toggle="modal" data-bs-target="#dtlogModal"/>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">2024 - Downtime Logger</h5>
+                  <p class="card-text">A simple and extensible blog web-app based on Flask.</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="Screenshot of web app" src="img/DMS_Dashboard.png" style="height: 100%; width: 100%" data-bs-toggle="modal" data-bs-target="#dmsModal" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">2024 - Document Management System</h5>
+                  <p class="card-text">A simple and extensible blog web-app based on Flask.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-12">
+              <div class="tile">
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <p class="subtitle is-4">Downtime Logger</p>
+                    <figure class="image is-3by2">
+                      <img class="modal-trigger" data-target="project-1-modal" src="img/project-1-cover.png">
+                    </figure>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <p class="subtitle is-5">Document Management System</p>
+                    <figure class="image is-4by3">
+                      <img class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
+                    </figure>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <p class="title">Project title</p>
+                    <figure class="image is-4by3">
+                      <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
+                    </figure>
+                    <p class="title">Project title</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-12">
+              <div class="tile">
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <p class="title">Project title</p>
+                    <figure class="image is-4by3">
+                      <img class="modal-trigger" data-target="project-4-modal" src="img/project-4-cover.png">
+                    </figure>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <p class="title">Project title</p>
+                    <figure class="image is-4by3">
+                      <img class="modal-trigger" data-target="project-5-modal" src="img/project-5-cover.png">
+                    </figure>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <p class="title">Project title</p>
+                    <figure class="image is-4by3">
+                      <img class="modal-trigger" data-target="project-6-modal" src="img/project-6-cover.png">
+                    </figure>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Education / Training</h1>
+      <hr />
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">School Name</p>
+            <p class="subtitle is-6">Program/Course - <time datetime="2016-9">September 2016</time> - <time
+                datetime="2019-9">Sepemter 2019</time></p>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris.
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">School Name</p>
+            <p class="subtitle is-6">Program/Course - <time datetime="2015-9">September 2014</time> - <time
+                datetime="2015-9">Sepemter 2015</time></p>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris.
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Contact</h1>
+      <hr />
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://github.com/mmacneil" class="icon is-large">
+              <i class="fab fa-2x fa-github"></i>
+            </a>
+            <p class="heading"><a href="https://github.com/mmacneil">github.com/mmacneil</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://fullstackmark.com" class="icon is-large">
+              <i class="fas fa-2x fa-globe"></i>
+            </a>
+            <p class="heading"><a href="https://fullstackmark.com">fullstackmark.com</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="mailto:markmacneil@gmail.com" class="icon is-large">
+              <i class="fas fa-2x fa-envelope"></i>
+            </a>
+            <p class="heading"><a href="mailto:markmacneil@gmail.com">markmacneil@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://www.linkedin.com/in/markmacneilhfx" class="icon is-large">
+              <i class="fab fa-2x fa-linkedin-in"></i>
+            </a>
+            <p class="heading"><a href="https://www.linkedin.com/in/markmacneilhfx">linkedin</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+<!-- Modal DTlog -->
+<div class="modal fade" id="dtlogModal" tabindex="-1" aria-labelledby="dtlogModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="dtlogModalLabel">Downtime Logger</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselDtlog" class="carousel slide carousel-dark" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDtlog" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselDtlog" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselDtlog" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/DTLOG_Dashboard.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Dashboard</h5>
+                <p>Monitoring status dokumen.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/carousel/DMS_Login.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Login</h5>
+                <p>Akses menggunakan akun LDAP.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/carousel/DMS_Log.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Log Activity</h5>
+                <p>Menampilkan riwayat aktivitas.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDms" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDms" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  end modal DTlog -->
+
+<!-- Modal DMS -->
+<div class="modal fade" id="dmsModal" tabindex="-1" aria-labelledby="dmsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="dmsModalLabel">Document Management System</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselDms" class="carousel slide carousel-dark" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDms" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselDms" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselDms" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/DMS_Dashboard.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Dashboard</h5>
+                <p>Monitoring status dokumen.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/carousel/DMS_Login.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Login</h5>
+                <p>Akses menggunakan akun LDAP.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/carousel/DMS_Log.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Log Activity</h5>
+                <p>Menampilkan riwayat aktivitas.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDms" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDms" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  end modal DMS -->
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <a href="https://github.com/mmacneil/devfolio" target="_blank" class="icon has-text-primary">
+          <i class="fab fa-github"></i> <strong>devfolio</strong></a>
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>
