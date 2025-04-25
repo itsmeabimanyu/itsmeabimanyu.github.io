@@ -133,15 +133,11 @@
         transform: translateY(0);
     }
 
-    .contact-label {
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #333;
-    }
+    
 
     .contact-action-btn {
         width: 100%;
-        background: #444;
+        /* background: #444; */
         color: white;
         border: none;
         padding: 8px 15px;
@@ -154,18 +150,18 @@
         transition: all 0.3s ease;
     }
 
-    .contact-action-btn:hover {
+    /* .contact-action-btn:hover {
         transform: translateY(-2px);
-    }
+    } */
 
-    .wa .contact-action-btn { background: #25D366; }
+    /* .wa .contact-action-btn { background: #25D366; }
     .wa .contact-action-btn:hover { background: #128C7E; }
 
     .email .contact-action-btn { background: #007bff; }
     .email .contact-action-btn:hover { background: #0056b3; }
 
     .linkedin .contact-action-btn { background: #0077b5; }
-    .linkedin .contact-action-btn:hover { background: #005885; }
+    .linkedin .contact-action-btn:hover { background: #005885; } */
 
     @media (hover: none) {
         .contact-collapse-content { display: none; }
@@ -179,49 +175,8 @@
   </style>
 
 </head>
+
   <body class="d-flex flex-column min-vh-100">
-    <div class="floating-container">
-      
-      <!-- WhatsApp -->
-      <div class="contact-wrapper">
-        <div class="contact-collapse-content">
-          <div class="contact-label">628123456789</div>
-          <a href="https://wa.me/628123456789" class="contact-action-btn wa">
-            <i class="fab fa-whatsapp"></i> Chat Sekarang
-          </a>
-        </div>
-        <button class="contact-main-btn wa">
-          <i class="fab fa-whatsapp"></i>
-        </button>
-      </div>
-
-      <!-- Email -->
-      <div class="contact-wrapper">
-        <div class="contact-collapse-content">
-          <div class="contact-label">you@example.com</div>
-          <a href="mailto:you@example.com" class="contact-action-btn email">
-            <i class="fas fa-envelope"></i> Kirim Email
-          </a>
-        </div>
-        <button class="contact-main-btn email">
-          <i class="fas fa-envelope"></i>
-        </button>
-      </div>
-
-      <!-- LinkedIn -->
-      <div class="contact-wrapper">
-        <div class="contact-collapse-content">
-          <div class="contact-label">linkedin.com/in/yourusername</div>
-          <a href="https://linkedin.com/in/yourusername" class="contact-action-btn linkedin" target="_blank">
-            <i class="fab fa-linkedin"></i> Profil LinkedIn
-          </a>
-        </div>
-        <button class="contact-main-btn linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </button>
-      </div>
-    </div>
-
     <!-- Wrapper untuk Hero + Tabs Navigation -->
     <div class="sticky-top bg-white pb-2" style="z-index: 1020;">
       <section class="hero py-3 position-relative">
@@ -230,28 +185,55 @@
           <div class="row align-items-center">
             <!-- Kolom foto kiri -->
             <div class="col-sm-12 col-md-2 d-flex justify-content-center align-items-center">
-              <img src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?t=st=1745565864~exp=1745569464~hmac=ad0cf450693b7f91d3df00e83f91ebc6bef30b2fd2ced1a566e2e88abb73bd67&w=740" alt="My Photo" class="rounded-circle img-fluid" style="max-width: 150px;">
+              <img src="img/profile/me.png" alt="My Photo" class="rounded-circle img-fluid" style="max-width: 150px;">
             </div>
             <!-- Kolom teks kanan -->
-            <div class="col-sm-12 col-md-6 text-start">
+            <div class="col-sm-12 col-md-10 text-start">
               <h1 class="display-5 mt-3 fw-bold">Abimanyu</h1>
               <h1 class="display-6 m-0 fw-light">Portfolio</h1>
               <p class="lead">Explore a collection of experiences and projects.</p>
             </div>
-            <div class="col-sm-12 col-md-4 text-end">
-              <p class="mb-1">
-                <i class="fa fa-envelope me-1 text-light"></i>
-                <a href="mailto:emailku.abimanyu@gmail.com" class="text-light">emailku.abimanyu@gmail.com</a>
-              </p>
-              <p class="mb-1">
-                <i class="fab fa-whatsapp me-1 text-light"></i>
-                <a href="https://wa.me/6289603331663" target="_blank" class="text-light">+62 896-0333-1663</a>
-              </p>
-              <p class="mb-0">
-                <i class="fab fa-linkedin me-1 text-light"></i>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-light">LinkedIn</a>
-              </p>
+          </div>
+        </div>
+
+        <div class="floating-container">
+          <!-- WhatsApp -->
+          <div class="contact-wrapper">
+            <div class="contact-collapse-content">
+              <div class="fw-bold text-dark small mb-2">+6289603331663</div>
+              <a href="https://wa.me/6289603331663" class="contact-action-btn wa">
+                <i class="fab fa-whatsapp"></i> Chat Now
+              </a>
             </div>
+            <button class="contact-main-btn wa">
+              <i class="fab fa-whatsapp"></i>
+            </button>
+          </div>
+    
+          <!-- Email -->
+          <div class="contact-wrapper">
+            <div class="contact-collapse-content">
+              <div class="fw-bold text-dark small mb-2">emailku.abimanyu@gmail.com</div>
+              <a href="mailto:emailku.abimanyu@gmail.com" class="contact-action-btn email">
+                <i class="fas fa-envelope"></i> Send Email
+              </a>
+            </div>
+            <button class="contact-main-btn email">
+              <i class="fas fa-envelope"></i>
+            </button>
+          </div>
+    
+          <!-- LinkedIn -->
+          <div class="contact-wrapper">
+            <div class="contact-collapse-content">
+              <div class="fw-bold text-dark small mb-2 text-uppercase">abimanyu s.kom</div>
+              <a href="https://id.linkedin.com/in/abimanyubima" class="contact-action-btn linkedin" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn Profile
+              </a>
+            </div>
+            <button class="contact-main-btn linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
           </div>
         </div>
       </section>
@@ -1086,6 +1068,8 @@
     <footer class="bg-dark text-white py-4 text-center mt-auto">
       &copy; 2025 Abimanyu Portfolio. All rights reserved.
     </footer>
+
+
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
