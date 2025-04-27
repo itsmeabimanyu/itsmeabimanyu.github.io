@@ -34,23 +34,14 @@
       color: #6c757d; /* Warna teks default */
       border: 10px solid #fff;  /* Menambahkan border putih 2px */
     }
-    /* Nav link yang aktif (Bootstrap biasanya kasih .active)
+    
+    
     .nav-link.active {
       background: linear-gradient(45deg, #4e73df, #1e3d8f);
-      color: #fff !important;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent; /* fallback */
     }
-
-    .btn-text {
-      color: #1e3d8f !important;
-    }
-
-    .text-primary {
-      color: #1e3d8f !important;
-    }
-
-    .rotate-icon {
-      color: #1e3d8f !important;
-    } */
 
   </style>
 
@@ -108,13 +99,13 @@
     .accordion-button:not(.collapsed) {
       background: linear-gradient(45deg, #4e73df, #1e3d8f);
       color: #ffffff;
-      border: none;
     }
 
     .accordion-button:not(.collapsed)::after {
       transform: rotate(180deg);
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f0f0f0' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
     }
+    
   </style>
 
   <style>
@@ -181,6 +172,19 @@
         transition: all 0.3s ease;
     }
 
+    .contact-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border: none;
+      transition: all 0.3s ease
+    }
+
     /* .contact-action-btn:hover {
         transform: translateY(-2px);
     } */
@@ -236,8 +240,8 @@
                 <i class="fab fa-whatsapp"></i> Chat Now
               </a>
             </div>
-            <button class="btn text-light btn-lg shadow-lg wa" style="border-radius: 50%;">
-              <i class="fab fa-whatsapp"></i>
+            <button class="btn text-light contact-btn shadow-lg wa" style="border-radius: 50%;">
+              <i class="fab fa-whatsapp fa-2x"></i>
             </button>
           </div>
     
@@ -249,8 +253,8 @@
                 <i class="fas fa-envelope"></i> Send Email
               </a>
             </div>
-            <button class="btn text-light btn-lg shadow-lg email" style="border-radius: 50%;">
-              <i class="fas fa-envelope"></i>
+            <button class="btn text-light contact-btn shadow-lg email" style="border-radius: 50%;">
+              <i class="fas fa-envelope fa-2x"></i>
             </button>
           </div>
     
@@ -262,8 +266,8 @@
                 <i class="fab fa-linkedin"></i> LinkedIn Profile
               </a>
             </div>
-            <button class="btn text-light btn-lg shadow-lg linkedin" style="border-radius: 50%;">
-              <i class="fab fa-linkedin-in"></i>
+            <button class="btn text-light contact-btn shadow-lg linkedin" style="border-radius: 50%;">
+              <i class="fab fa-linkedin-in fa-2x"></i>
             </button>
           </div>
         </div>
@@ -278,7 +282,7 @@
             </button>   
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="software-tab" data-bs-toggle="tab" data-bs-target="#software" type="button" role="tab">
+            <button class="nav-link active" id="software-tab" data-bs-toggle="tab" data-bs-target="#software" type="button" role="tab">
               <i class="fas fa-code"></i> Software Projects
             </button>  
           </li>
@@ -306,15 +310,15 @@
                 <!-- Button Trigger -->
                 <!-- Stylish Toggle Button -->
                 <button class="btn btn-sm btn-toggle mb-2" data-bs-toggle="collapse" data-bs-target="#jobdesk1" aria-expanded="false" aria-controls="jobdesk1">
-                  <i class="fas fa-chevron-down me-1 rotate-icon"></i> <span class="btn-text">Lihat Detail</span>
+                  <i class="fas fa-chevron-down me-1 rotate-icon"></i> <span class="btn-text">Job Desk</span>
                 </button>
                 <!-- Collapsible Detail -->
                 <div class="collapse small" id="jobdesk1">
                   <ul class="mb-0 mt-2">
-                    <li>Mengembangkan aplikasi perangkat lunak untuk kebutuhan operasional perusahaan.</li>
-                    <li>Berkolaborasi dengan tim pengembangan untuk merancang, mengimplementasikan, dan menguji solusi perangkat lunak.</li>
-                    <li>Menganalisis kebutuhan sistem dan memberikan rekomendasi perbaikan atau peningkatan performa aplikasi.</li>
-                    <li>Menyusun dokumentasi teknis dan melakukan debugging serta pemeliharaan sistem.</li>
+                    <li>Merancang dan membangun aplikasi perangkat lunak yang mendukung proses operasional perusahaan.</li>
+                    <li>Berkolaborasi dengan tim untuk merancang, membangun, dan menguji aplikasi perangkat lunak.</li>
+                    <li>Menganalisa dan memperbaiki bug pasca-implementasi untuk memastikan kestabilan aplikasi.</li>
+                    <li>Memberikan dukungan teknis kepada pengguna terkait software maupun hardware.</li>
                   </ul>
                 </div>
               </div>
@@ -322,7 +326,7 @@
 
             <div class="col-md-6">
               <div class="card shadow-sm p-3">
-                <h6 class="fw-bold"><i class="fas fa-briefcase me-2"></i> IT Infrastructure & Software Development</h6>
+                <h6 class="fw-bold"><i class="fas fa-briefcase me-2"></i> Technical Support & Software Development</h6>
                 <p class="mb-1 d-flex align-items-center">
                   <strong class="text-dark">PT. Mekar Armada Jaya</strong>
                   <span class="vr mx-2"></span>
@@ -332,16 +336,15 @@
                 <!-- Button Trigger -->
                 <!-- Stylish Toggle Button -->
                 <button class="btn btn-sm btn-toggle mb-2" data-bs-toggle="collapse" data-bs-target="#jobdesk2" aria-expanded="false" aria-controls="jobdesk2">
-                  <i class="fas fa-chevron-down me-1 rotate-icon"></i> <span class="btn-text">Lihat Detail</span>
+                  <i class="fas fa-chevron-down me-1 rotate-icon"></i> <span class="btn-text">Job Desk</span>
                 </button>
                 <!-- Collapsible Detail -->
                 <div class="collapse small" id="jobdesk2">
                   <ul class="mb-0 mt-2">
-                    <li>Menjaga target SLA (Service Level Agreement) jaringan dengan 100% uptime dan 0% downtime.</li>
-                    <li>Melaksanakan pengadaan/pembelian inventaris proyek jaringan dan infrastruktur TI bersama departemen pengadaan (procurement) maupun vendor.</li>
-                    <li>Pemeliharaan, konfigurasi, dan tindakan preventif (hardware, software, dan jaringan) secara berkala.</li>
-                    <li>Menangani troubleshooting masalah jaringan dan infrastruktur.</li>
-                    <li>Membuat laporan pemantauan produktivitas TI (harian, mingguan, tahunan).</li>
+                    <li>Menjaga kinerja jaringan dengan mencapai target SLA, uptime 100%.</li>
+                    <li>Melaksanakan pengadaan inventaris proyek jaringan dan infrastruktur TI bersama departemen terkait dan vendor.</li>
+                    <li>Melakukan pemeliharaan, konfigurasi, tindakan preventif, dan troubleshooting berkala untuk hardware, software, dan jaringan.</li>
+                    <li>Menyusun laporan kinerja IT secara mingguan.</li>
                   </ul>
                 </div>
               </div>
@@ -359,15 +362,15 @@
                 <!-- Button Trigger -->
                 <!-- Stylish Toggle Button -->
                 <button class="btn btn-sm btn-toggle mb-2" data-bs-toggle="collapse" data-bs-target="#jobdesk3" aria-expanded="false" aria-controls="jobdesk3">
-                  <i class="fas fa-chevron-down me-1 rotate-icon"></i> <span class="btn-text">Lihat Detail</span>
+                  <i class="fas fa-chevron-down me-1 rotate-icon"></i> <span class="btn-text">Job Desk</span>
                 </button>
                 <!-- Collapsible Detail -->
                 <div class="collapse small" id="jobdesk3">
                   <ul class="mb-0 mt-2">
-                    <li>Mengelola kapasitas dan ketersediaan lokasi cadangan (reserve) serta lokasi primary (selection).</li>
-                    <li>Melakukan pemantauan produk yang tidak tersedia (not supply), selisih kuantitas (shrinkage), dan produk yang kedaluwarsa.</li>
-                    <li>Bertanggung jawab atas akurasi lokasi produk, ukuran kemasan (pack size), kuantitas, dan SKU dengan target 99%.</li>
-                    <li>Menyusun laporan penyesuaian stok (adjustment stock), perhitungan siklus (cycle count), dan berkontribusi dalam pelaksanaan stok opname setiap semester.</li>
+                    <li>Mengelola kapasitas dan ketersediaan penyimpanan untuk barang cadangan (reserve) dan utama (selection).</li>
+                    <li>Memantau ketersediaan produk, selisih kuantitas (shrinkage), dan barang kedaluwarsa.</li>
+                    <li>Bertanggung jawab atas akurasi lokasi produk, pack size, kuantitas, dan SKU dengan target 99%.</li>
+                    <li>Menyusun laporan penyesuaian stok (stock adjustment), perhitungan stok berkala (cycle count), dan melaksanakan stok opname tiap semester.</li>
                   </ul>
                 </div>
               </div>
@@ -386,15 +389,15 @@
                 <!-- Button Trigger -->
                 <!-- Stylish Toggle Button -->
                 <button class="btn btn-sm btn-toggle mb-2" data-bs-toggle="collapse" data-bs-target="#jobdesk4" aria-expanded="false" aria-controls="jobdesk4">
-                  <i class="fas fa-chevron-down me-1 rotate-icon"></i> <span class="btn-text">Lihat Detail</span>
+                  <i class="fas fa-chevron-down me-1 rotate-icon"></i> <span class="btn-text">Job Desk</span>
                 </button>
 
                 <!-- Collapsible Detail -->
                 <div class="collapse small" id="jobdesk4">
                   <ul class="mb-0 mt-2">
-                    <li>Melakukan perakitan Secure Key Shutter.</li>
-                    <li>Pengecekan Bar Lock dan kelistrikan switch ON/OFF pada kunci kontak.</li>
-                    <li>Pengecekan kesesuaian magnet cylinder shutter dengan kepala kunci (key mold).</li>
+                    <li>Memeriksa dan menguji kelistrikan pada switch ON/OFF kunci kontak untuk memastikan pengoperasiannya berfungsi dengan baik.</li>
+                    <li>Merakit cover lock dan memastikan magnet cylinder shutter terpasang dengan benar dan cocok dengan kepala kunci (key mold).</li>
+                    <li>Mengecek setiap komponen kunci kontak berjalan dengan baik dan tidak ada cacat.</li>
                   </ul>
                 </div>
               </div>
@@ -413,16 +416,16 @@
                 <!-- Button Trigger -->
                 <!-- Stylish Toggle Button -->
                 <button class="btn btn-sm btn-toggle mb-2" data-bs-toggle="collapse" data-bs-target="#jobdesk5" aria-expanded="false" aria-controls="jobdesk5">
-                  <i class="fas fa-chevron-down me-1 rotate-icon"></i> <span class="btn-text">Lihat Detail</span>
+                  <i class="fas fa-chevron-down me-1 rotate-icon"></i> <span class="btn-text">Job Desk</span>
                 </button>
 
                 <!-- Collapsible Detail -->
                 <div class="collapse small" id="jobdesk5">
                   <ul class="mb-0 mt-2">
-                    <li>Mengoperasikan mesin Small Press Aida dan Komatsu.</li>
-                    <li>Mengoperasikan crane/hoist.</li>
-                    <li>Menyiapkan dies (Dandori Dies).</li>
-                    <li>Melakukan pengecekan berkala terhadap standar toleransi proses stamping menggunakan alat ukur.</li>
+                    <li>Mengoperasikan mesin press Aida dan Komatsu untuk melakukan proses press Sprocket meliputi Marunuki, Shinuki, Shiagenuki, dan Menoshi.</li>
+                    <li>Mengoperasikan crane/hoist untuk pemindahan material dan dies di area kerja.</li>
+                    <li>Melakukan proses pemasangan, pembongkaran, serta penyetelan dies sesuai dengan part number atau tipe dies yang tercantum dalam Work Order / Idouhyo.</li>
+                    <li>Melakukan pengecekan kualitas hasil stamping secara visual maupun menggunakan alat ukur (vernier caliper, micrometer, plug gauge, dan dial gauge).</li>
                   </ul>
                 </div>
               </div>
@@ -432,7 +435,7 @@
         </div>
 
         <!-- Software Projects Tab -->
-        <div class="tab-pane fade" id="software" role="tabpanel" aria-labelledby="software-tab">
+        <div class="tab-pane fade active show" id="software" role="tabpanel" aria-labelledby="software-tab">
           <div class="row g-4">
             <div class="accordion" id="projectAccordion">
 
